@@ -231,7 +231,7 @@ select.sort{font-family:var(--font);font-size:12px;color:var(--text);background:
 
 /* grid */
 .rescount{max-width:1160px;margin:8px auto 0;padding:0 20px;font-size:12.5px;color:var(--muted);font-weight:500;text-align:right}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:18px;max-width:1160px;margin:8px auto 40px;padding:0 18px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:1160px;margin:8px auto 40px;padding:0 18px}
 .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;cursor:pointer;transition:.22s;position:relative}
 .card:hover{transform:translateY(-4px);box-shadow:var(--shadow-h);border-color:var(--border2)}
 .card .imgbox{position:relative;aspect-ratio:1/1;background:linear-gradient(160deg,#fafafa,#f2f2f2);display:flex;align-items:center;justify-content:center;padding:14px}
@@ -533,7 +533,7 @@ select.sort{font-family:var(--font);font-size:12px;color:var(--text);background:
   <div class="svc"><svg viewBox="0 0 24 24"><path d="M3 7h11v8H3zM14 10h4l3 3v2h-7z"/><circle cx="7" cy="17" r="1.6"/><circle cx="17.5" cy="17" r="1.6"/></svg><b id="svc1a">משלוח חינם</b><small id="svc1b">בקנייה מעל ₪299</small></div>
   <div class="svc"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 14-5l2 2M20 12a8 8 0 0 1-14 5l-2-2"/><path d="M20 4v5h-5M4 20v-5h5"/></svg><b id="svc2a">החזרות חינם</b><small id="svc2b">עד 30 יום</small></div>
   <div class="svc"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg><b id="svc3a">מוצרים מקוריים</b><small id="svc3b">100% מקורי</small></div>
-  <div class="svc"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18"/><path d="M9 15h3"/></svg><b id="svc4a">תשלום מאובטח</b><small id="svc4b">הצפנה מלאה</small></div>
+
 </div>
 
 <!-- promo tiles — הוסתרו זמנית לבקשת המשתמש (2026-07-12) עד שיוחלט תוכן; להחזרה: הסר את הערת ה-HTML -->
@@ -727,7 +727,7 @@ const I18N={
   f_disc:'מכירה עצמאית של מוצרים מקוריים · כל הסימנים המסחריים שייכים לבעליהם',
   hero_sub:'הקולקציה הנבחרת — איפור · טיפוח · שיער · בושם',
   ebtn:'למומלצים שלנו',
-  svc1a:'משלוח חינם', svc1b:'בקנייה מעל ₪299', svc2a:'החזרות חינם', svc2b:'עד 30 יום', svc3a:'מוצרים מקוריים', svc3b:'100% מקורי', svc4a:'תשלום מאובטח', svc4b:'הצפנה מלאה',
+  svc1a:'משלוח חינם', svc1b:'בקנייה מעל ₪299', svc2a:'החזרות חינם', svc2b:'עד 30 יום', svc3a:'מוצרים מקוריים', svc3b:'100% מקורי', 
   pt1h:'מותגי הטיפוח האהובים', pt2h:'בשמים מקוריים', pt2p:'מבתי האופנה המובילים', buy:'לרכישה',
   br_title:'המותגים האהובים', br_more:'לכל המותגים ›', rec_title:'מומלץ בשבילך', rec_more:'לכל המוצרים ›', shop_all:'כל המוצרים',
   nv_home:'בית', nv_search:'חיפוש', nv_fav:'מועדפים', nv_cart:'עגלה', nv_wa:'וואטסאפ',
@@ -775,7 +775,7 @@ const I18N={
   f_disc:'بيع مستقل لمنتجات أصلية · جميع العلامات التجارية ملك لأصحابها',
   hero_sub:'التشكيلة المختارة — مكياج · عناية · شعر · عطر',
   ebtn:'إلى توصياتنا',
-  svc1a:'شحن مجاني', svc1b:'للطلبات فوق ₪299', svc2a:'إرجاع مجاني', svc2b:'حتى 30 يوم', svc3a:'منتجات أصلية', svc3b:'أصلية 100%', svc4a:'دفع آمن', svc4b:'تشفير كامل',
+  svc1a:'شحن مجاني', svc1b:'للطلبات فوق ₪299', svc2a:'إرجاع مجاني', svc2b:'حتى 30 يوم', svc3a:'منتجات أصلية', svc3b:'أصلية 100%', 
   pt1h:'ماركات العناية المفضّلة', pt2h:'عطور أصلية', pt2p:'من أشهر دور الأزياء', buy:'للشراء',
   br_title:'الماركات المفضّلة', br_more:'كل الماركات ›', rec_title:'موصى به لك', rec_more:'كل المنتجات ›', shop_all:'كل المنتجات',
   nv_home:'الرئيسية', nv_search:'بحث', nv_fav:'المفضلة', nv_cart:'السلة', nv_wa:'واتساب',
@@ -829,7 +829,7 @@ function applyStatic(){
   // homepage sections (Sephora-style)
   setText('ebtnD',t('ebtn'));setText('ebtnM',t('ebtn'));
   setText('svc1a',t('svc1a'));setText('svc1b',t('svc1b'));setText('svc2a',t('svc2a'));setText('svc2b',t('svc2b'));
-  setText('svc3a',t('svc3a'));setText('svc3b',t('svc3b'));setText('svc4a',t('svc4a'));setText('svc4b',t('svc4b'));
+  setText('svc3a',t('svc3a'));setText('svc3b',t('svc3b'));
   setText('pt1h',t('pt1h'));setText('pt2h',t('pt2h'));setText('pt2p',t('pt2p'));
   var _pb=document.querySelectorAll('.ptile .cta');for(var _i=0;_i<_pb.length;_i++)_pb[_i].textContent=t('buy');
   setText('brTitle',t('br_title'));setText('brMore',t('br_more'));setText('recTitle',t('rec_title'));setText('recMore',t('rec_more'));setText('shopAllT',t('shop_all'));
