@@ -1,0 +1,22 @@
+{
+ "_readme": "כל המיתוג של קטלוג גלרי במקום אחד. אין לערוך מחרוזות מותג בתוך build_catalog.py.",
+ "brand_he": "גלרי",
+ "brand_en": "GALLERY",
+ "tagline_he": "ביוטי אנד קר",
+ "tagline_en": "BEAUTY & CARE",
+ "legal_name": "קוזמיד ביוטי בע\"מ",
+ "company_id": "517262135",
+ "address": "טייבה מרכז",
+ "wa_number": "972548105750",
+ "wa_display": "054-8105750",
+ "email": "",
+ "site_url": "",
+ "wholesale": false,
+ "colors": {
+  "accent": "#6E1220",
+  "accent_d": "#4A0C16",
+  "accent_l": "#8E2436",
+  "accent_soft": "#FBF1F2",
+  "gold": "#C4A265"
+ }
+}

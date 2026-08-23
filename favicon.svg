@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="GALLERY Beauty & Care">
+  <rect width="64" height="64" rx="14" fill="#6E1220"/>
+  <rect x="3" y="3" width="58" height="58" rx="11" fill="none" stroke="#C4A265" stroke-width="1.4" opacity="0.6"/>
+  <text x="32" y="41" text-anchor="middle" font-family="'Cormorant Garamond',Georgia,serif" font-size="34" font-weight="600" fill="#C4A265">G</text>
+</svg>
